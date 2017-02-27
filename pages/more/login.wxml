@@ -1,0 +1,20 @@
+<!--login.wxml-->
+<view class="container">
+    <view class="content">
+        <view class="hd">
+            
+        </view>
+        <view class="bd">
+            <form class="login-form">
+                <view>
+                    <text class="input-label">账号</text>
+                    <input type="number" placeholder="请输入学号" cursor-spacing="30" maxlength="12"/>
+                </view>
+                <view>
+                    <text class="input-label">密码</text>
+                    <input password="true" placeholder="请输入密码" cursor-spacing="30"  />
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/more/login",
+    "pages/more/more",
+    
+    "pages/index/index"
+    
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#7acfa6",
+    "navigationBarTitleText": "浙农林",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#7acfa6",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "7f848a",
+    "selectedColor": "#7acfa6",
+    "backgroundColor": "#f7f6fb",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index/index.png",
+      "selectedIconPath": "images/index/index@active.png"
+    },{
+      "pagePath": "pages/more/more",
+      "text": "更多",
+      "iconPath": "images/more/more.png",
+      "selectedIconPath": "images/more/more@active.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "uploadFile": 15000,
+    "downloadFile": 15000
+  }
+}
