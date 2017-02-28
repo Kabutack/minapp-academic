@@ -2,9 +2,7 @@
   "pages":[
     "pages/more/login",
     "pages/more/more",
-    
     "pages/index/index"
-    
   ],
   "window":{
     "navigationBarBackgroundColor": "#7acfa6",
