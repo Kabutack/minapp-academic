@@ -1,24 +1,32 @@
 <!--login.wxml-->
 <view class="container">
+    <modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCancel">
+        <text>请输入下图的验证码</text>
+        <image src="{{codeUrl}}"></image>
+        <input type="text" placeholder="验证码" />
+    </modal>
     <view class="content">
         <view class="hd">
             <image class="logo01" src="/images/more/logo01.png" mode="aspectFit"></image>
             <image class="logo02" src="/images/more/logo02.png" mode="aspectFit"></image>
         </view>
         <view class="bd">
-            <form class="login-form">
-                <view class="input-group">
-                    <text class="input-label">账号</text>
-                    <input type="number" placeholder="请输入学号" cursor-spacing="30" maxlength="12"/>
+            <form class="login_form" bindsubmit="formSubmit">
+                <view class="input_group">
+                    <text class="input_label">学号</text>
+                    <input type="number" placeholder="请输入学号" cursor-spacing="30" maxlength="12" bindinput="userIdInput"/>
                 </view>
-                <view class="input-group">
-                    <text class="input-label">密码</text>
-                    <input password="true" placeholder="请输入密码" cursor-spacing="30"  />
+                <view class="input_group">
+                    <text class="input_label">密码</text>
+                    <input password="true" placeholder="请输入密码" cursor-spacing="30" bindinput="userPwdInput" />
                 </view>
+                <view class="">
+                    <button type="primary" form-type="submit" class="sub_btn">登录</button>
+                </view>
+                  <!--<view class="button_wrapper">
+                    <button type="primary" formType="submit" class="primary">查询</button>
+                </view>-->
             </form>
-            <view class="comfirm-btn">
-                <text>确认绑定</text>
-            </view>
         </view>
     </view>
 </view>
