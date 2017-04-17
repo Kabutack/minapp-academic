@@ -103,3 +103,12 @@
 .sub_btn{
     width: 90%;
 }
+/*验证码弹窗*/
+.modal{
+    
+}
+.codeImg{
+    width: 72px;
+    height: 27px;
+    margin-top: 5px;
+}

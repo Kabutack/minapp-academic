@@ -1,9 +1,9 @@
 <!--login.wxml-->
 <view class="container">
     <modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCancel">
-        <text>请输入下图的验证码</text>
-        <image src="{{codeUrl}}"></image>
-        <input type="text" placeholder="验证码" />
+        <text>请输入图中的验证码</text><br/>
+        <image class="codeImg" src="{{codeUrl}}"></image>
+        <input type="text" placeholder="验证码" bindinput="codeNumInput" />
     </modal>
     <view class="content">
         <view class="hd">
