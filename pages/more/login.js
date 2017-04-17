@@ -101,9 +101,11 @@ Page({
   modalConfirm: function(){
     var page = this;
     wx.request({
-      url: 'https://URL',
+      url: 'http://localhost/zafujwc/code.php',
       data: {
-        codenum: page.data.codeNum//
+        username: page.data.userId,
+        password: page.data.userPwd,
+        codenum: page.data.codeNum
       },
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
