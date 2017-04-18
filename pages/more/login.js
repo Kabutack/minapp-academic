@@ -82,14 +82,14 @@ Page({
       //   'Content-Type': 'application/json;charset=UTF-8;'
       // },
       success: function(res){
-        console.log(res.data);
+        // console.log(res.data);
         page.setData({
-          codeUrl: res.data,
+          codeUrl: res.data,//传入验证码图片路径
           modalHidden: false
         });
       },
       fail: function(res) {
-        console.log(res);
+        console.log(res.data);
         console.log("is failed");
       },
       complete: function(res) {
@@ -111,14 +111,20 @@ Page({
       // header: {}, // 设置请求的 header
       success: function(res){
         // success
+        console.log(res.data);
       },
       fail: function(res) {
         // fail
+        console.log(res.data);
+        console.log('is failed');
       },
       complete: function(res) {
         // complete
       }
-    })
+    });
+    page.setData({
+      modalHidden: true//弹窗消失
+    });
   },
   //验证码弹窗取消
   modalCancel: function(){
