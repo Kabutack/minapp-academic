@@ -101,7 +101,7 @@ Page({
   modalConfirm: function(){
     var page = this;
     wx.request({
-      url: 'http://localhost/zafujwc/code.php',
+      url: 'http://localhost/zafujwc/login.php',
       data: {
         username: page.data.userId,
         password: page.data.userPwd,
